@@ -1,0 +1,100 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>search</servlet-name>
+		<servlet-class>status.SearchStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>search</servlet-name>
+		<url-pattern>/searchdata</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>insert</servlet-name>
+		<servlet-class>status.InsertStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>insert</servlet-name>
+		<url-pattern>/insertData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>update</servlet-name>
+		<servlet-class>status.StatusUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update</servlet-name>
+		<url-pattern>/updateData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>delete</servlet-name>
+		<servlet-class>status.DeleteStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete</servlet-name>
+		<url-pattern>/deleteData</url-pattern>
+	</servlet-mapping>
+	
+	 <display-name>Sensation</display-name>
+	  <servlet>
+	  	<servlet-name>fbdisplay</servlet-name>
+	  	<servlet-class>feedbacksen.feedbackservlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	  	<servlet-name>fbdisplay</servlet-name>
+	  	<url-pattern>/fb</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	  	<servlet-name>fbdelete</servlet-name>
+	  	<servlet-class>feedbacksen.FbDeleteServlet</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	  	<servlet-name>fbdelete</servlet-name>
+	  	<url-pattern>/fd</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+		<servlet-name>memLogin</servlet-name>
+		<servlet-class>com.login.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>memLogin</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>memregister</servlet-name>
+	<servlet-class>com.login.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>memregister</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>memupdate</servlet-name>
+	<servlet-class>com.login.UpdateuserInfoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>memupdate</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+		
+		<servlet>
+	<servlet-name>memdelete</servlet-name>
+	<servlet-class>com.login.DeleteuseraccServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>memdelete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+   
+</web-app>
